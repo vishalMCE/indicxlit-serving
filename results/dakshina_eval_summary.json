@@ -1,0 +1,9 @@
+{
+  "optimized_int8": {
+    "engine": "CTranslate2 INT8",
+    "total": 4442,
+    "top1_accuracy": 61.01,
+    "topk_accuracy": 85.23,
+    "throughput_words_sec": 367.9
+  }
+}

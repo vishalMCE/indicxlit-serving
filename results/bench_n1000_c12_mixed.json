@@ -1,0 +1,55 @@
+{
+  "timestamp": "2026-10-08 02:27:43",
+  "config": {
+    "requests": 1000,
+    "warmup": 5,
+    "concurrency": 12,
+    "batch_size": 1,
+    "beam_width": 4,
+    "topk": 4,
+    "workload": "mixed",
+    "backends": [
+      "all"
+    ],
+    "seed": 42,
+    "no_cache": true,
+    "eval_quality": false,
+    "out": null,
+    "no_save": false
+  },
+  "ctranslate2": {
+    "requests": 1000,
+    "total_words": 1000,
+    "total_time_seconds": 1.464,
+    "mean_ms": 17.311,
+    "std_ms": 11.702,
+    "min_ms": 3.592,
+    "p50_ms": 14.04,
+    "p90_ms": 31.745,
+    "p95_ms": 40.644,
+    "p99_ms": 59.711,
+    "max_ms": 103.926,
+    "throughput_req_per_sec": 683.2,
+    "words_per_sec": 683.2
+  },
+  "stock_fairseq": {
+    "requests": 1000,
+    "total_words": 1000,
+    "total_time_seconds": 22.548,
+    "mean_ms": 187.273,
+    "std_ms": 84.622,
+    "min_ms": 44.376,
+    "p50_ms": 173.032,
+    "p90_ms": 294.84,
+    "p95_ms": 362.905,
+    "p99_ms": 452.319,
+    "max_ms": 620.801,
+    "throughput_req_per_sec": 44.3,
+    "words_per_sec": 44.3
+  },
+  "speedup": {
+    "throughput_multiplier": 15.42,
+    "p50_latency_reduction": 12.32,
+    "p95_latency_reduction": 8.93
+  }
+}
