@@ -6,8 +6,8 @@ The original model was slow, heavy, and failed the 100ms speed goal when typists
 
 Now it runs in **under 15 ms**, uses **less than 35 MB of RAM**, and can run offline on a court clerk's laptop or serve 500+ users in the cloud for about **$156/month**.
 
-> **Full Engineering Report**:  
-> I wrote down all my experiments, hardware tests, cost math, and findings in simple detail on Notion:  
+> [!NOTE]
+> **Full Engineering Report**: I wrote down all my experiments, hardware tests, cost math, and findings in simple detail on Notion:  
 > **[Read the Full Report on Notion](https://app.notion.com/p/Adalat-AI-ML-Assignment-Report-3f361c2c3111800eb21fffd627288572)**
 
 ## Quick Numbers (TL;DR)
@@ -39,7 +39,8 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-> **Note**: The converted 12.8 MB INT8 model is already in `models/ct2_indicxlit_int8/`, so you don't have to download or convert any big model files.
+> [!NOTE]
+> The converted 12.8 MB INT8 model is already in `models/ct2_indicxlit_int8/`, so you don't have to download or convert any big model files.
 
 ## How to Run the Benchmarks
 
@@ -84,6 +85,7 @@ Results:
 
 I created a simple FastAPI server so typists or web editors can get suggestions over HTTP.
 
+> [!NOTE]
 > **Honest note on the API**: I didn't spend much time building a complicated API. Most of my time went into the **benchmarks, testing different ideas, and making the model fast**. The FastAPI server here is simple, clean, and gets the job done to show real latency and Docker support.
 
 ### Run Locally with Uvicorn:
